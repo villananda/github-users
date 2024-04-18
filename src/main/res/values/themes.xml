@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GithubUsers" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/gray_smoke</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+
+    <style name="Theme.GithubUsers" parent="Base.Theme.GithubUsers" />
+
+    <style name="Theme.GithubUsers.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.GithubUsers.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
+
+    <style name="Theme.GithubUsers.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

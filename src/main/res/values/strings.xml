@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Github Users</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="daftar_user">Daftar User</string>
+    <string name="detail_user">Detail User</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="tab_text_follower">Follower</string>
+    <string name="tab_text_following">Following</string>
+    <string name="content_tab_follower">Hello Follower</string>
+    <string-array name="content_tab_following">
+        <item>Following Page</item>
+        <item>Follower Page</item>
+    </string-array>
+
+    <string name="title_activity_detail">Detail</string>
+    <string name="title_favorite_user">Favorite</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="search_hint">Cari Username</string>
+    <string name="profile_image">profile image</string>
+    <string name="text_follower">%1$s Follower</string>
+    <string name="text_following">%1$s Following</string>
+    <string name="about">About</string>
+    <string name="text_username">\@%1$s</string>
+    <string name="action_store_favorit_user">Action Store Favorit User</string>
+    <string name="daftar_user_favorit">User Favorite</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="theme_title">Ganti tema</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="dark_theme_on">Dark Theme</string>
+    <string name="dark_theme_off">Light Theme</string>
+    <string name="dark_mode_off">Dark Mode Off</string>
+    <string name="for_empty_list">For Empty List</string>
+</resources>

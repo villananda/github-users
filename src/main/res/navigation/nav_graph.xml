@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainNavActivity">
+
+    <activity
+        android:id="@+id/MainNavActivity"
+        android:name="villa.nanda.githubusers.ui.MainActivity"
+        android:label="@string/daftar_user"
+        tools:layout="@layout/activity_main">
+
+        <action
+            android:id="@+id/action_main_to_detail"
+            app:destination="@id/DetailNavActivity" />
+
+        <action
+            android:id="@+id/action_main_to_favorite"
+            app:destination="@id/FavoriteNavActivity" />
+    </activity>
+
+    <activity
+        android:id="@+id/FavoriteNavActivity"
+        android:name="villa.nanda.githubusers.ui.FavoriteActivity"
+        android:label="@string/daftar_user_favorit"
+        tools:layout="@layout/activity_favorite">
+
+        <action
+            android:id="@+id/action_favorite_to_main"
+            app:destination="@id/MainNavActivity" />
+    </activity>
+
+    <activity
+        android:id="@+id/DetailNavActivity"
+        android:name="villa.nanda.githubusers.ui.DetailActivity"
+        android:label="@string/detail_user"
+        tools:layout="@layout/activity_detail">
+
+        <action
+            android:id="@+id/action_detail_to_main"
+            app:destination="@id/MainNavActivity" />
+
+        <action
+            android:id="@+id/action_detail_to_favorite"
+            app:destination="@id/FavoriteNavActivity" />
+    </activity>
+</navigation>

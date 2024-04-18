@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/default_margin"
+        android:autofillHints="@string/search_hint"
+        android:hint="@string/search_hint"
+        android:queryHint="@string/search_hint"
+        android:background="@drawable/bg_oval"
+        app:queryBackground="@drawable/bg_oval"
+        app:submitBackground="@drawable/bg_oval" />
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/empty_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/default_margin"
+            android:src="@drawable/not_search_bar"
+            android:visibility="gone"
+            android:contentDescription="@string/for_empty_list" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/default_margin" />
+    </LinearLayout>
+</LinearLayout>
